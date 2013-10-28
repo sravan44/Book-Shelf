@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @bookself.name %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @bookself.price %>
+</p>
+
+<p>
+  <b>Author:</b>
+  <%= @bookself.author %>
+</p>
+<%=debug @bookself.book_img.url%>
+<p>
+	<%= image_tag @bookself.book_img.jpg.url%>
+</p>
+
+<%= link_to 'Edit', edit_bookself_path(@bookself) %> |
+<%= link_to 'Back', bookselves_path %>
